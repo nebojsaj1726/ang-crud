@@ -1,0 +1,15 @@
+<p *ngIf="isLoading" class="info">Loading...</p>
+<form [formGroup]="form" (submit)="onSaveProduct()" *ngIf="!isLoading">
+  <input type="text" formControlName="name" placeholder="Product Name" />
+  <input
+    type="text"
+    formControlName="description"
+    placeholder="Product Description"
+  />
+  <input
+    type="text"
+    formControlName="price"
+    placeholder="Product Price (1 - 1000)"
+  />
+  <button type="submit">Save Product</button>
+</form>

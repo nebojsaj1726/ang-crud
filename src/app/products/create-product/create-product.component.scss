@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  input {
+    margin: 15px;
+    height: 40px;
+    padding: 3px 7px;
+    width: 60%;
+
+    @media (max-width: 567px) {
+      width: 90%;
+    }
+  }
+  button {
+    padding: 10px 16px;
+    width: 200px;
+    border: none;
+    background-color: darkcyan;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+  }
+}

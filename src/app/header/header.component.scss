@@ -1,0 +1,21 @@
+.navbar {
+  background-color: darkcyan;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 50px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .brand {
+    font-size: 20px;
+    margin: 0 50px;
+  }
+}
