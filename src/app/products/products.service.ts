@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Product } from './product.model';
 import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -13,7 +14,7 @@ const httpOptions = {
 
 @Injectable({ providedIn: 'root' })
 export class ProductsService {
-  private apiUrl = 'https://still-garden-90747.herokuapp.com/api/products';
+  private apiUrl = environment.API_URL;
 
   private products: Product[] = [];
   private productsUpdated = new Subject<Product[]>();
